@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style type="text/css">
+	#outer{
+		position: absolute;
+		top:5%;
+		left:10%;
+		height: 40%;
+		width: 50%;
+		overflow: auto;
+	}
+	#outer2{
+		position: absolute;
+		top:50%;
+		left:10%;
+		height: 40%;
+		width: 50%;
+		overflow: auto;
+	}
+	
+	#outer img{
+		
+		width: 580;
+		height: 580;
+		border:2px solid red;
+		background: yellow;
+	}
+	 #a{
+		position:absolute;
+		left:0%;
+		top:0%;
+		width: 80%;
+		height: 180%;
+		border:2px solid red;
+		background: yellow;
+	}
+	#b{
+		position:absolute;
+		left:80%;
+		top:0%;
+		width: 80%;
+		height: 180%;
+		border:2px solid red;
+		background: blue;
+	}
+	#c{
+		position:absolute;
+		left:0%;
+		top:180%;
+		width: 80%;
+		height: 180%;
+		border:2px solid red;
+		background: green;
+	}
+	#d{
+		position:absolute;
+		left:80%;
+		top:180%;
+		width: 80%;
+		height: 180%;
+		border:2px solid red;
+		background: orange;
+	} 
+	/*  #a{
+		float:left;
+		width: 300px;
+		height: 500px;
+		border:2px solid red;
+		background: yellow;
+	}
+	#b{
+		float:left;
+		width: 300px;
+		height:500px;
+		border:2px solid red;
+		background: blue;
+	} 
+	#c{
+		float:left;
+		width: 300px;
+		height: 500px;
+		border:2px solid red;
+		background: green;
+	}
+	#d{
+		float:left;
+		width: 300px;
+		height: 500px;
+		border:2px solid red;
+		background: orange;
+	} */
+	.barStyle{
+		background:green;
+		opacity:1;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		
+	}
+	.trackStyle{
+		background:green;
+		opacity:1;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		
+	}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="jquery.jqScroll.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	 	$("#outer,#outer2").jqScroll({
+	 		/* scrollThumbLength:25, */
+	 		autoHide:false,
+			scrollLatency:10,
+	 		scrollbarOverTheContent:false,
+	 		scrollTrackVisible:true,
+			scrollThumbStyleClass:"barStyle",
+			scrollTrackStyleClass:"trackStyle"
+	 	}); 
+	});	
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="outer">
+		<!-- <div id="a"></div>
+		<div id="b"></div>
+		<div id="c"></div>
+		<div id="d"></div> -->
+		<img src="vastolordus.jpg"></img>
+	</div>
+	
+	<div id="outer2">
+		<div id="a"></div>
+		<div id="b"></div>
+		<div id="c"></div>
+		<div id="d"></div>
+		<!-- <img src="vastolordus.jpg"></img> -->
+	</div>
+	
+	
+</body>
+</html>
