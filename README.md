@@ -1,5 +1,5 @@
-transScrollbars
-===============
+jqScroll
+========
 
 jquery plugin custom scrollbars
 
