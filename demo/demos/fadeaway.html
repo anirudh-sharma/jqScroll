@@ -91,12 +91,8 @@
 		background: orange;
 	} */
 	.barStyle{
-		background:green;
-		opacity:1;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;
-		
+		background:black;
+		opacity:.4;
 	}
 	.trackStyle{
 		background:green;
@@ -107,19 +103,19 @@
 		
 	}
 </style>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
-<script type="text/javascript" src="jquery.jqScroll.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="../js/jquery.jqScroll.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 	 	$("#outer,#outer2").jqScroll({
 	 		/* scrollThumbLength:25, */
-	 		autoHide:false,
+	 		scrollbarWidth:15,
+	 		autoHide: true,
 			scrollLatency:10,
-	 		scrollbarOverTheContent:false,
-	 		scrollTrackVisible:true,
+	 		scrollbarOverTheContent: true,
+	 		scrollTrackVisible:false,
 			scrollThumbStyleClass:"barStyle",
-			scrollTrackStyleClass:"trackStyle"
 	 	}); 
 	});	
 
